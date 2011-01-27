@@ -1,7 +1,58 @@
 !!com.aptana.scripting.model.BundleElement
-author: null
+author: Benjamin Jackson
 children:
-- !command
+- !!com.aptana.scripting.model.MenuElement
+  children:
+  - children: &id001 []
+    commandName: 'key: value'
+    customProperties: null
+    displayName: 'key: value'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Add list item
+    customProperties: null
+    displayName: Add list item
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Sort Keys Alphabetically
+    customProperties: null
+    displayName: Sort Keys Alphabetically
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Convert Document / Selection to Ruby
+    customProperties: null
+    displayName: Convert Document / Selection to Ruby
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: '-'
+    customProperties: null
+    displayName: '-'
+    path: bundle.rb
+    scope: null
+  - children: *id001
+    commandName: Syntax Cheat Sheet
+    customProperties: null
+    displayName: Syntax Cheat Sheet
+    path: bundle.rb
+    scope: null
+  commandName: YAML
+  customProperties: null
+  displayName: YAML
+  path: bundle.rb
+  scope: null
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-8dacf194-fc07-468a-bd1d-2047a0974fed,
+  path: bundle.rb, scope: source.yaml}
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Add list item
@@ -14,7 +65,7 @@ children:
   runType: current_thread
   scope: source.yaml
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Convert Document / Selection to Ruby
@@ -27,7 +78,7 @@ children:
   runType: current_thread
   scope: source.yaml
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Sort Keys Alphabetically
@@ -40,7 +91,7 @@ children:
   runType: current_thread
   scope: source.yaml
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Syntax Cheat Sheet
@@ -53,7 +104,7 @@ children:
   runType: current_thread
   scope: source.yaml
   workingDirectoryType: UNDEFINED
-- !command
+- !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: {expansion: '${1:key}: ${2:value}$0'}
   displayName: 'key: value'
@@ -73,12 +124,16 @@ children:
 copyright: null
 customProperties: {contact_email_rot_13: ora@vapbzhzqrfvta.pbz}
 decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
-description: null
+description: '<a href="http://www.yaml.org/">YAML</a> is a straightforward machine
+  parsable data serialization format designed for human readability and interaction
+  with scripting languages such as Perl and Python.
+
+  '
 displayName: YAML
-fileTypeRegistry: {}
-fileTypes: []
-foldingStartMarkers: {!scope 'source.yaml': !regexp '(?-mix:^[^#]\s*.*:(\s*\[?| &.+)?$)'}
-foldingStopMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s*$|^\s*\}|^\s*\]|^\s*\))'}
+fileTypeRegistry: &id002 {}
+fileTypes: *id001
+foldingStartMarkers: *id002
+foldingStopMarkers: *id002
 increaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s*.*(:|-) ?(&\w+)?(\{[^}"'']*|\([^)"'']*)?$)'}
 license: null
 licenseUrl: null
