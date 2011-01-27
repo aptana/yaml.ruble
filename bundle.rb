@@ -10,9 +10,11 @@ END
   increase_indent = /^\s*.*(:|-) ?(&\w+)?(\{[^}"']*|\([^)"']*)?$/
   decrease_indent = /^\s+\}$/
   bundle.indent['source.yaml'] = increase_indent, decrease_indent
-  start_folding = /^[^#]\s*.*:(\s*\[?| &.+)?$/
-  end_folding = /^\s*$|^\s*\}|^\s*\]|^\s*\)/
-  bundle.folding['source.yaml'] = start_folding, end_folding
+
+  # Set up folding. Folding is now done in Java code for this language  
+  # start_folding = /^[^#]\s*.*:(\s*\[?| &.+)?$/
+  # end_folding = /^\s*$|^\s*\}|^\s*\]|^\s*\)/
+  # bundle.folding['source.yaml'] = start_folding, end_folding
 
   bundle.menu 'YAML' do |main_menu|
     main_menu.command 'key: value'
