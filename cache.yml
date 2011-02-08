@@ -50,12 +50,13 @@ children:
   displayName: YAML
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: snippet-8dacf194-fc07-468a-bd1d-2047a0974fed,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-5721bdd1-0f2d-4c9e-87c9-14564de21b74,
   path: bundle.rb, scope: source.yaml}
 - !!com.aptana.scripting.model.CommandElement
   async: false
   customProperties: null
   displayName: Add list item
+  input: [selection, line]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [NUMPAD_ENTER]
@@ -69,6 +70,7 @@ children:
   async: false
   customProperties: null
   displayName: Convert Document / Selection to Ruby
+  input: [selection, document]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
@@ -82,6 +84,7 @@ children:
   async: false
   customProperties: null
   displayName: Sort Keys Alphabetically
+  input: [selection]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [F6]
@@ -95,6 +98,7 @@ children:
   async: false
   customProperties: null
   displayName: Syntax Cheat Sheet
+  input: [none]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+H]
@@ -108,6 +112,7 @@ children:
   async: false
   customProperties: {expansion: '${1:key}: ${2:value}$0'}
   displayName: 'key: value'
+  input: [none]
   inputPath: null
   keyBindingMap:
     !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+;]
@@ -117,10 +122,20 @@ children:
   runType: current_thread
   scope: source.yaml - string
   workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement {async: false, customProperties: null,
-  displayName: YAML Template, filetype: '*.yaml', inputPath: null, keyBindingMap: null,
-  outputPath: null, outputType: discard, path: templates/templates.rb, runType: current_thread,
-  scope: null, workingDirectoryType: UNDEFINED}
+- !!com.aptana.scripting.model.TemplateElement
+  async: false
+  customProperties: null
+  displayName: YAML Template
+  filetype: '*.yaml'
+  input: []
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: discard
+  path: templates/templates.rb
+  runType: current_thread
+  scope: null
+  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: ora@vapbzhzqrfvta.pbz}
 decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
