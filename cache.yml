@@ -50,7 +50,7 @@ children:
   displayName: YAML
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-db2325ba-8078-4ac6-9374-8d8040e5305c,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-e49f5536-b81e-4055-84e4-c4a093c00f30,
   path: bundle.rb, scope: source.yaml}
 - !!com.aptana.scripting.model.CommandElement
   async: false
@@ -119,20 +119,6 @@ children:
   path: snippets/snippets.rb
   runType: current_thread
   scope: source.yaml - string
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.TemplateElement
-  async: false
-  customProperties: null
-  displayName: YAML Template
-  filetype: '*.yaml'
-  input: []
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: discard
-  path: templates/templates.rb
-  runType: current_thread
-  scope: null
   workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: ora@vapbzhzqrfvta.pbz}
