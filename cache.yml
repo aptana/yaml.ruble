@@ -1,6 +1,74 @@
 !!com.aptana.scripting.model.BundleElement
 author: Benjamin Jackson
 children:
+- !command
+  async: false
+  customProperties: null
+  displayName: Add list item
+  input: [selection, line]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [NUMPAD_ENTER]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: commands/add_list_item.rb
+  runType: current_thread
+  scope: source.yaml
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Convert Document / Selection to Ruby
+  input: [selection, document]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
+  outputPath: null
+  outputType: create_new_document
+  path: commands/convert_to_ruby.rb
+  runType: current_thread
+  scope: source.yaml
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Sort Keys Alphabetically
+  input: [selection]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: replace_selection
+  path: commands/sort_keys_alphabetically.rb
+  runType: current_thread
+  scope: source.yaml
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: null
+  displayName: Syntax Cheat Sheet
+  input: [none]
+  inputPath: null
+  keyBindingMap: null
+  outputPath: null
+  outputType: show_as_html
+  path: commands/syntax_cheat_sheet.rb
+  runType: current_thread
+  scope: source.yaml
+  workingDirectoryType: UNDEFINED
+- !command
+  async: false
+  customProperties: {expansion: '${1:key}: ${2:value}$0'}
+  displayName: 'key: value'
+  input: [none]
+  inputPath: null
+  keyBindingMap:
+    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+;]
+  outputPath: null
+  outputType: insert_as_snippet
+  path: snippets/snippets.rb
+  runType: current_thread
+  scope: source.yaml - string
+  workingDirectoryType: UNDEFINED
 - !!com.aptana.scripting.model.MenuElement
   children:
   - children: &id001 []
@@ -50,76 +118,8 @@ children:
   displayName: YAML
   path: bundle.rb
   scope: null
-- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-e49f5536-b81e-4055-84e4-c4a093c00f30,
+- !!com.aptana.scripting.model.EnvironmentElement {customProperties: null, displayName: environment-1f651842-2ca1-4b31-8321-b1db70ad6bc8,
   path: bundle.rb, scope: source.yaml}
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Add list item
-  input: [selection, line]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [NUMPAD_ENTER]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: commands/add_list_item.rb
-  runType: current_thread
-  scope: source.yaml
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Convert Document / Selection to Ruby
-  input: [selection, document]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+H]
-  outputPath: null
-  outputType: create_new_document
-  path: commands/convert_to_ruby.rb
-  runType: current_thread
-  scope: source.yaml
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Sort Keys Alphabetically
-  input: [selection]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: replace_selection
-  path: commands/sort_keys_alphabetically.rb
-  runType: current_thread
-  scope: source.yaml
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: null
-  displayName: Syntax Cheat Sheet
-  input: [none]
-  inputPath: null
-  keyBindingMap: null
-  outputPath: null
-  outputType: show_as_html
-  path: commands/syntax_cheat_sheet.rb
-  runType: current_thread
-  scope: source.yaml
-  workingDirectoryType: UNDEFINED
-- !!com.aptana.scripting.model.CommandElement
-  async: false
-  customProperties: {expansion: '${1:key}: ${2:value}$0'}
-  displayName: 'key: value'
-  input: [none]
-  inputPath: null
-  keyBindingMap:
-    !!com.aptana.scripting.model.Platform 'ALL': [CONTROL+M2+;]
-  outputPath: null
-  outputType: insert_as_snippet
-  path: snippets/snippets.rb
-  runType: current_thread
-  scope: source.yaml - string
-  workingDirectoryType: UNDEFINED
 copyright: null
 customProperties: {contact_email_rot_13: ora@vapbzhzqrfvta.pbz}
 decreaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s+\}$)'}
@@ -129,13 +129,13 @@ description: '<a href="http://www.yaml.org/">YAML</a> is a straightforward machi
 
   '
 displayName: YAML
-fileTypeRegistry: &id002 {}
-fileTypes: *id001
-foldingStartMarkers: *id002
-foldingStopMarkers: *id002
+fileTypeRegistry: {}
+fileTypes: []
+foldingStartMarkers: {}
+foldingStopMarkers: {}
 increaseIndentMarkers: {!scope 'source.yaml': !regexp '(?-mix:^\s*.*(:|-) ?(&\w+)?(\{[^}"'']*|\([^)"'']*)?$)'}
 license: null
 licenseUrl: null
 path: bundle.rb
-repository: null
+repository: git://github.com/aptana/yaml.ruble.git
 visible: true
