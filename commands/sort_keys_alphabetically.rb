@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Sort Keys Alphabetically' do |cmd|
+command t(:sort_keys_alphabetically) do |cmd|
   # cmd.key_binding = 'F6' # Commented out to avoid clashes with debugger
   cmd.scope = 'source.yaml'
   cmd.output = :replace_selection

@@ -1,0 +1,8 @@
+en:
+  bundle_name: 'YAML'
+  key_value: 'key: value'
+  add_list_item: 'Add list item'
+  sort_keys_alphabetically: 'Sort Keys Alphabetically'
+  convert_to_ruby: 'Convert Document / Selection to Ruby'
+  cheat_sheet: 'Syntax Cheat Sheet'
+  

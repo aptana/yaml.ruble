@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Convert Document / Selection to Ruby' do |cmd|
+command t(:convert_to_ruby) do |cmd|
   cmd.key_binding = 'CONTROL+M2+H'
   cmd.scope = 'source.yaml'
   cmd.output = :create_new_document
