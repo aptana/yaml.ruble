@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Add list item' do |cmd|
+command t(:add_list_item) do |cmd|
   cmd.key_binding = 'NUMPAD_ENTER'
   cmd.scope = 'source.yaml'
   cmd.output = :insert_as_snippet
