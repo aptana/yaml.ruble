@@ -1,6 +1,6 @@
 require 'ruble'
 
-command 'Syntax Cheat Sheet' do |cmd|
+command t(:cheat_sheet) do |cmd|
   #cmd.key_binding = 'M4+H'
   cmd.scope = 'source.yaml'
   cmd.output = :show_as_html
